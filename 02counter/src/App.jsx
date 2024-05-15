@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   // let counter =15
-  let [counter, setCounter] = useState(15)   // useState is responsible for chaning the state  //setCounter is a fun
+  let [counter, setCounter] = useState(15)   // useState is responsible for chaning the state of counter at each place   //setCounter is a fun
 
   const addValue = () => {
 
@@ -22,15 +22,17 @@ function App() {
       counter = counter - 1;
       setCounter(counter)
     }
+   
+
   }
   return (
     <>
       <h1>Chai or react-02</h1>
       <h2>Counter value: {counter}</h2>
 
-      <button onClick={addValue}>Add value{counter}</button>
+      <button onClick={addValue} >Add value{counter}</button>
       <br />
-      <button onClick={removeValue}>Remove value {counter}</button>
+      <button onClick={removeValue} >Remove value {counter}</button>
 
       <footer>{counter}</footer>
     </>
